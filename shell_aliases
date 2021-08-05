@@ -1,0 +1,33 @@
+# config-files
+alias vimrc='vim ~/.vimrc'
+alias zshrc="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias bashrc="vim ~/.bash_aliases"
+
+# easy-navigation
+alias m='cd'
+alias ..='cd ..' 
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias notes='cd ~/Documents/notes'
+
+# app-specific bindings
+alias tmux='tmux -u'
+alias docker='sudo docker'
+alias dropboxd='~/.dropbox-dist/dropboxd'
+
+# aesthetics
+alias lsa='ls -la'
+alias pp='ping google.com'
+alias gg='echo "" > ~/.bash_history && shutdown now'
+alias creds='cat ~/Dropbox/Documents/Credentials.txt | grep'
+alias lip='now=$(date +"%d %b - %H.%M.%S") && ip=$(curl -s https://api.ipify.org) && ipv4=$(curl -s https://api64.ipify.org) && (echo -e $now"\t"$ip"\t"$ipv4) >> ~/Documents/logs/ip_addresses.log && echo -e $now"\t"$ip"\t"$ipv4'
+
+# youtube-dl specific
+alias getfd='sudo youtube-dl -F'
+alias getid='sudo youtube-dl --get-id'
+alias gett='sudo youtube-dl --get-title'
+alias getau='sudo youtube-dl -f 250/249/251 --merge-output-format mp3'
+alias gethq='sudo youtube-dl -f 136+250/best+250/best+best --merge-output-format mkv'
+
+
